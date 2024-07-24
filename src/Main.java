@@ -87,6 +87,8 @@ public class Main {
         System.out.print("Soma lista2: ");
         System.out.print(sumLinkedListNodeValue(l2));
         System.out.println();
+        System.out.print(sumLinkedListNodeValue(result));
+        System.out.println();
         
         
     }
