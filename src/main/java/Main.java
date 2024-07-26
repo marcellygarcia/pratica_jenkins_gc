@@ -1,4 +1,3 @@
-package src;
 import java.util.Scanner;
 public class Main {
     
@@ -131,5 +130,20 @@ public class Main {
             head=head.next;
         }
         return sum;
+    }
+
+    public static ListNode arrayToLinkedList(int[] array) {
+        ListNode head = null, tail = null;
+        for (int value : array) {
+            ListNode newNode = new ListNode(value);
+            if (head == null) {
+                head = newNode;
+                tail = newNode;
+            } else {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
+        return head;
     }
 }
